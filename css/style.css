@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-------Setup basics CSS---------*/
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    /*font-size: 62.5%;*/
+    font-size: 16px;
+    /*overflow-x: hidden;*/
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+    box-shadow: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*------------Style Here-------------*/
+
+/*---------------Header--------------*/
+
+.header {
+    background-color: #ccc;
+    height: 70px;
+}
+
+/*-------------Main---------------*/
+
+.content-main {
+    background-color: #fbfbfb;
+}
+
+/*.content-bg {
+    background-image: url("./image/paper.jpeg");
+    width: 1349px;
+    height: 100%;
+}*/
+
+.content-bg {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.content-bg p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/*---product---*/
+
+.product-img {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.view-product {
+    position: relative;
+    transition: all 0.4s;
+}
+
+.wrap-product{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+
+}
+
+.wrap-product > img {
+    margin-bottom: 10px;
+}
+
+.bg-product {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    transition: all 0.4s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.info-product {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;  
+    transform: translate(-50%, -10%);
+    transition: 0.4s;
+}
+
+.info-product > h5 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.view-product:hover .bg-product {
+    opacity: 1;
+}
+
+div.view-product:hover .info-product,
+div.view-product:active .info-product {
+    transform: translate(-50%, -300%);
+}
+
+.info-detail--rate i {
+    font-size: 15px;
+    color: gold;
+}
+/*---quick view and download---*/
+
+.info-product a {
+    display: inline-block;
+}
+
+/**/
+/*------------------------*/
+
+.info-product a i {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px;
+    margin: 0px 2px;
+    transition: all 0.4s;
+    font-size: 10px;
+}
+
+.info-product a i:hover {
+    border: 2px solid #f4623a;
+    color: #f4623a;
+}
+
+div.view-product:hover .bg-product {
+    opacity: 1;
+}
+
+div.view-product:hover .info-product,
+div.view-product:active .info-product {
+    transform: translate(-50%, -50%);
+}
+
+.info-detail {
+    text-align: center;
+}
+
+.info-detail--name,
+.info-detail--price,
+.info-detail--rate {
+    margin-bottom: 10px;
+}
+
+/*------------------Slide-------------------*/
+
+.slide-content-bottom {
+    background-image: url(http://thietkewebnhanh247.com/wp-content/themes/thietkewebsite/img/diagmonds.png);
+    display: block;
+    width: 100%;
+    height: 295px;
+    background-repeat: repeat;
+    padding: 25px; 0;
+}
+
+.slide-bottom-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.slick-slide {
+    margin: 0 5px;
+}
+
+.service__silder {
+    padding: 40px 0;
+}
+
+.service__silder img {
+    outline: none;
+    border: none;
+}
+
+/*-------------------Cart-----------------*/
+
+#cart {
+    background-color: #CCC;
+    width: 70%;
+    min-height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/*----------------Footer--------------*/
+
+.footer {
+    background-color: #ccc;
+    height: 200px;
+}
